@@ -11,13 +11,13 @@
       <v-row>
         <v-select
           class="mr-4"
-          label="Useless first"
-          :items="['California', 'Colorado']"
+          label="Chọn sản phẩm"
+          :items="['Cây cảnh', 'quần']"
           variant="outlined"
         ></v-select>
         <v-select
-          label="Condition"
-          :items="['California', 'Colorado']"
+          label="Giá"
+          :items="['Từ thấp=>Cao', 'Từ cao=>thấp']"
           variant="outlined"
         ></v-select>
         <v-select
@@ -29,7 +29,7 @@
       </v-row>
     </v-col>
     <v-spacer></v-spacer>
-    <v-col cols="6">
+    <v-col cols="6" class="text-right">
       <v-row>
         <v-btn
           class="text-capitalize mt-2"
@@ -43,7 +43,7 @@
           elevation="2"
           size="large"
           style="color: #2264d1"
-          >Auction</v-btn
+          >Action</v-btn
         >
         <v-btn
           class="text-capitalize mt-2"
@@ -61,7 +61,7 @@
         >
           <v-icon>mdi mdi-menu</v-icon>
         </v-btn>
-        <v-btn class="mt-2" size="large">
+        <v-btn class="mt-2" size="large" style="color:blue">
           <v-icon>mdi mdi-microsoft</v-icon>
         </v-btn>
       </v-row>

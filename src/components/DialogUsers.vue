@@ -14,7 +14,7 @@
                 </v-col>
                 <v-col cols="12" style="font-size: 13px;">
                   <p>Ngày sinh</p>
-                  <v-text-field placeholder="YYYY/MM/DD" style="background-color: white;" density="compact" single-line hide-details variant="outlined"></v-text-field>
+                  <v-text-field placeholder="YYYY/MM/DD" style="background-color: white;" density="compact" single-line hide-details variant="outlined" type="date"></v-text-field>
                 </v-col>
                 <v-col cols="12" style="font-size: 13px;">
                   <p>Số điện thoại</p>

@@ -1,7 +1,7 @@
 <template>
   <v-app-bar >
     <div>
-        <p>Danh sách sản phẩm</p>
+        <!-- <p>Danh sách sản phẩm</p> -->
     </div>
     <v-spacer></v-spacer>
     <v-toolbar-item>

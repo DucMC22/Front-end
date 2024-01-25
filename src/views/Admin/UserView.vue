@@ -43,7 +43,7 @@
                     <v-img
                       width="60"
                       height="50"
-                      src="https://wall.vn/wp-content/uploads/2020/04/anh-dep-viet-nam-18.jpg"
+                      src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/352540285_1667457463716513_1213699232460349449_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=0Z1WEAA1MqwAX_rfrg0&_nc_ht=scontent.fhan5-9.fna&cb_e2o_trans=q&oh=00_AfCvhNX0osT1xyIqKoUn-JVQbFv5aNOzoYMdlmWING8MSA&oe=65B7CAA2"
                     ></v-img>
                   </td>
                   <td>Người dùng {{ i }}</td>
@@ -51,10 +51,10 @@
                   <td>0343595727</td>                 
                   <td class="text-center">
                     <v-btn variant="text"
-                      ><v-icon>mdi mdi-pencil</v-icon></v-btn
+                      ><v-icon>mdi mdi-pencil-outline</v-icon></v-btn
                     >
                     <v-btn variant="text"
-                      ><v-icon>mdi mdi-delete</v-icon></v-btn
+                      ><v-icon>mdi mdi-trash-can-outline</v-icon></v-btn
                     >
                   </td>
                 </tr>

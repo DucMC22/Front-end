@@ -55,10 +55,10 @@
                   </td>
                   <td class="text-center">
                     <v-btn variant="text"
-                      ><v-icon>mdi mdi-pencil</v-icon></v-btn
+                      ><v-icon>mdi mdi-pencil-outline</v-icon></v-btn
                     >
                     <v-btn variant="text"
-                      ><v-icon>mdi mdi-delete</v-icon></v-btn
+                      ><v-icon>mdi mdi-trash-can-outline</v-icon></v-btn
                     >
                   </td>
                 </tr>
