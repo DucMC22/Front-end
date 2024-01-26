@@ -4,7 +4,11 @@
       <v-row>
         <v-col cols="3">
           <v-text-field
-            style="background-color: white"
+            style="
+              background-color: white;
+              font-size: 15px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            "
             density="compact"
             variant="outlined"
             label="Tìm kiếm"
@@ -20,7 +24,7 @@
             color="primary"
             prepend-icon="mdi mdi-plus"
             class="text-uppercase"
-            >Thêm</v-btn
+            >Tạo mới</v-btn
           >
         </v-col>
       </v-row>
@@ -30,11 +34,54 @@
             <v-table density="compact">
               <thead>
                 <tr>
-                  <th class="text-left">Avatar</th>
-                  <th class="text-left">Tên người dùng</th>
-                  <th class="text-left">Ngày sinh</th>
-                  <th class="text-left">Số điện thoại</th>
-                  <th class="text-center">Acction</th>
+                  <th
+                    class="text-left"
+                    style="opacity: 0.5"
+                    width="96px"
+                    height="15px"
+                  >
+                    Avatar
+                  </th>
+                  <th
+                    class="text-left"
+                    style="opacity: 0.5"
+                    width="96px"
+                    height="15px"
+                  >
+                    Tên người dùng
+                  </th>
+                  <th
+                    class="text-left"
+                    style="opacity: 0.5"
+                    width="96px"
+                    height="15px"
+                  >
+                    Email
+                  </th>
+                  <th
+                    class="text-left"
+                    style="opacity: 0.5"
+                    width="96px"
+                    height="15px"
+                  >
+                    Ngày sinh
+                  </th>
+                  <th
+                    class="text-left"
+                    style="opacity: 0.5"
+                    width="96px"
+                    height="15px"
+                  >
+                    Số điện thoại
+                  </th>
+                  <th
+                    class="text-left"
+                    style="opacity: 0.5"
+                    width="96px"
+                    height="15px"
+                  >
+                    <p class="">Hành động</p>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -47,15 +94,18 @@
                     ></v-img>
                   </td>
                   <td>Người dùng {{ i }}</td>
+                  <td>ducvnhhh0907@gmail.com</td>
                   <td>09/07/2002</td>
-                  <td>0343595727</td>                 
-                  <td class="text-center">
-                    <v-btn variant="text"
-                      ><v-icon>mdi mdi-pencil-outline</v-icon></v-btn
-                    >
-                    <v-btn variant="text"
-                      ><v-icon>mdi mdi-trash-can-outline</v-icon></v-btn
-                    >
+                  <td>0343595727</td>
+                  <td class="text-left">
+                    <div style="display: flex">
+                      <v-icon class="mr-3" style="opacity: 0.5; cursor: pointer;"
+                        >mdi mdi-square-edit-outline</v-icon
+                      >
+                      <v-icon style="opacity: 0.5; cursor: pointer;"
+                        >mdi mdi-trash-can-outline</v-icon
+                      >
+                    </div>
                   </td>
                 </tr>
               </tbody>
@@ -76,9 +126,10 @@
               </v-col>
               <v-col cols="4" class="text-right">
                 <v-pagination
+                  active-color="#0F60FF"
                   variant="text"
                   density="compact"
-                  :length="10"
+                  :length="5"
                 ></v-pagination>
               </v-col>
             </v-row>

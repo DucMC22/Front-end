@@ -10,15 +10,16 @@
         </v-btn>
         <v-btn>
                 <v-icon>mdi mdi-bell</v-icon>
-            <v-badge content="999+" color="red">
+            <v-badge content="5+" color="red">
             </v-badge>
         </v-btn>
         <v-btn>
             <v-avatar>
             <v-img 
-                src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/352540285_1667457463716513_1213699232460349449_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=LekiM-hwOHAAX_LyHFq&_nc_ht=scontent.fhan17-1.fna&cb_e2o_trans=q&oh=00_AfAxa9OTxqHFyKsCbBFh1Q78lQ_WZTT601SWztEVFTzzFw&oe=65ABED22"
-                alt="Duc">
-                
+                src="https://alltop.vn/backend/media/images/posts/467/Tim_goc_chup_phu_hop-17057.jpg"
+                alt="Duc"
+                style="width: 38px; height: 38px;"
+                >                              
             </v-img>
         </v-avatar>
         </v-btn>

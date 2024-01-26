@@ -2,15 +2,29 @@
   <v-app>
     <NavBar />
     <v-container fluid>
-      <v-toolbar color="transparent" class="mt-10">
-        <v-btn class="mr-5" variant="text" color="">Realate</v-btn>
-        <v-chip class="mr-5">Worldwide shipping</v-chip>
-        <v-chip class="mr-5">under $50</v-chip>
-        <v-chip class="mr-5">Kitten</v-chip>
-        <v-chip class="mr-5">Plastic plugs</v-chip>
-        <v-chip class="mr-5">pucker shoes</v-chip>
-        <v-chip class="mr-5">vintage typewrite</v-chip>
-      </v-toolbar>
+       <v-row class="mr-3 ml-3 mt-3">
+    <v-col cols="12">
+      <v-chip variant="text">Related</v-chip>
+      <v-chip class="mr-2 mt-2">
+        worldwide shipping
+      </v-chip>
+      <v-chip class="mr-2 mt-2">
+        under $50
+      </v-chip>
+      <v-chip class="mr-2 mt-2">
+        kitten
+      </v-chip>
+      <v-chip class="mr-2 mt-2">
+        plastic plugs
+      </v-chip>
+      <v-chip class="mr-2 mt-2">
+        pucker shoes
+      </v-chip>
+      <v-chip class="mr-2 mt-2">
+        vintage typewriter
+      </v-chip>
+    </v-col>
+  </v-row>
       <v-row>
         <v-col cols="12" sm="3" v-for="(product, i) in products" :key="i">
           <v-card height="auto" align="center" variant="flat" hover>

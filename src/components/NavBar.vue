@@ -1,83 +1,36 @@
 <template>
-  <!-- <v-toolbar-title>SHOP</v-toolbar-title>
-    <v-row>
-    <v-card>
-    <v-tabs
-      v-model="tab"
-      bg-color="primary"
-    > -->
-  <v-row>
-    <v-col cols="5">
-      <v-row>
-        <v-select
-          class="mr-4"
-          label="Chọn sản phẩm"
-          :items="['Cây cảnh', 'quần']"
-          variant="outlined"
-        ></v-select>
-        <v-select
-          label="Giá"
-          :items="['Từ thấp=>Cao', 'Từ cao=>thấp']"
-          variant="outlined"
-        ></v-select>
-        <v-select
-          class="ml-4"
-          label="Delivery options"
-          :items="['California', 'Colorado']"
-          variant="outlined"
-        ></v-select>
-      </v-row>
+  <v-row class="ml-3 mt-3">
+    <v-col cols="4" sm="6" md="6" lg="2">
+      <v-select v-model="SelectedCategory" density="compact" label="Chọn sản phẩm"
+        :items="['All','giày','quần','cây cảnh']" variant="outlined"></v-select>
     </v-col>
-    <v-spacer></v-spacer>
-    <v-col cols="6" class="text-right">
-      <v-row>
-        <v-btn
-          class="text-capitalize mt-2"
-          variant="text"
-          size="large"
-          style="background-color: #ebf2ff"
-          >Show all</v-btn
-        >
-        <v-btn
-          class="text-capitalize mt-2"
-          elevation="2"
-          size="large"
-          style="color: #2264d1"
-          >Action</v-btn
-        >
-        <v-btn
-          class="text-capitalize mt-2"
-          variant="text"
-          size="large"
-          style="background-color: #ebf2ff"
-          >But now</v-btn
-        >
-        <v-spacer></v-spacer>
-        <v-btn
-          class="mt-2"
-          variant="text"
-          size="large"
-          style="background-color: #ebf2ff"
-        >
-          <v-icon>mdi mdi-menu</v-icon>
-        </v-btn>
-        <v-btn class="mt-2" size="large" style="color:blue">
-          <v-icon>mdi mdi-microsoft</v-icon>
-        </v-btn>
-      </v-row>
+    <v-col cols="4" sm="6" md="6" lg="2">
+      <v-select v-model="selectedSort" label="Giá" density="compact" :items="['Từ cao -> thấp','Từ thấp -> cao']"
+        variant="outlined"></v-select>
+    </v-col>
+    <v-col cols="4" sm="6" md="6" lg="2">
+      <v-select density="compact" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
+        variant="outlined"></v-select>
+    </v-col>
+    <v-col cols="12" sm="6" md="6" lg="6" class="text-right">
+      <v-btn style="background-color: #bbccf6;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
+        Show all
+      </v-btn>
+      <v-btn style="font-weight: bold;color: #2264D1;" bg-color="white" class="rounded-1 text-capitalize"
+        variant="elevated">
+        Action
+      </v-btn>
+      <v-btn style="background-color: #bbccf6;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
+        Buy now
+      </v-btn>
+      <v-btn  style="background-color: #adc4fe" class="ml-5" ariant="tonal">
+        <v-icon>mdi mdi-menu</v-icon>
+      </v-btn>
+      <v-btn class="mr-5"  variant="elevated">
+        <v-icon style="color: #0c5bda;">mdi mdi-microsoft</v-icon>
+      </v-btn>
     </v-col>
   </v-row>
-  <!-- </v-tabs>
-  </v-card>
-  </v-row> -->
-  <!-- <v-btn class="text-none" stacked>
-      <v-badge :content="0" color="erro">
-        <v-icon> mdi mdi-cart-check</v-icon>
-      </v-badge>
-    </v-btn> -->
-  <!-- <v-col cols="3">
-        <v-text-field density="compact" variant="outlined" label="Search" append-inner-icon="fas fa-search" single-line hide-details class="mr-2"></v-text-field>
-    </v-col> -->
 </template>
 
 <script>
